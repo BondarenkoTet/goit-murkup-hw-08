@@ -1,0 +1,12 @@
+:root {
+    --main-title-color: #FFFFFF;
+    --second-title-color: #2F303A;
+    --accent-color: #2196F3;
+    --maine-text-color: #757575;
+    --typical-lh: 1.19;
+    --main-font: font-family:'Roboto', sans-serif;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+}
+.current {
+    color: var(--accent-color);
+}
