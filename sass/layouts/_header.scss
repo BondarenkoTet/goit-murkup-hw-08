@@ -16,6 +16,7 @@
     gap: 50px;
     margin: 0;
     padding: 0;
+    display: none;
 }
 .navigation__link {
     font-family: var(--main-font);
@@ -61,7 +62,7 @@
     display: flex;
     gap: 30px;
     margin-left: auto;
-
+    display: none;
 }
 
 .conect__link {
@@ -90,3 +91,39 @@
     margin-left: 10px;
     fill: currentColor;
 }
+
+
+.menu-open-btn {
+    margin-left: auto;
+}
+.mob-menu {
+    position: fixed;
+    top: 0;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.menu-close-btn {}
+
+.mob-list {}
+
+.list {}
+
+.mob-item {}
+
+.mob-link {}
+
+.link {}
+
+.current {}
+
+.mob-conect {}
+
+.header {}
+
+.mob-conect-container {}
+
+.mob-conect-link {}

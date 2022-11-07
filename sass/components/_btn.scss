@@ -1,4 +1,19 @@
+.hero__button {
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    color: #FFFFFF;
+    background: var(--accent-color);
+    border-radius: 4px;
+    padding: 12px 26px;
+    border: none;
 
+}
 .footer-btn {
     padding: 8px 50px 8px 25px;
     margin-left: 12px;

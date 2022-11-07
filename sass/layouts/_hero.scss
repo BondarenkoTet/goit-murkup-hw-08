@@ -1,47 +1,55 @@
 .hero__container {
     background-color: #2F303A;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 280px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/hero.jpg);
+    padding-top: 118px;
+    padding-bottom: 198px;
+    background-image: var(--bg-gradient), url(../images/hero-mob1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    max-width: 1600px;
-    height: 600px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
-
+    @include retina { 
+        background-image: var(--bg-gradient), url(../images/hero-mob2x.jpg)
+    }
+    @media screen and (min-width: 768px) {
+        padding-top: 118px;
+        padding-bottom: 198px;
+        background-image: var(--bg-gradient), url(../images/hero-tab1x.jpg);
+    @include retina  {
+        background-image: var(--bg-gradient), url(../images/hero-tab2x.jpg)
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        padding-bottom: 280px;
+        height: 600px;
+        background-image: var(--bg-gradient), url(../images/hero-dec1x.jpg);
+    @include retina {
+        background-image: var(--bg-gradient) , url(../images/hero-dec2x.jpg)
+}
+}
 }
 .hero__title {
     font-family: var(--main-font);
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
+    font-size: 24px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--main-title-color);
     margin: 0 auto;
-    max-width: 696px;
-    margin-bottom: 30px;
+    max-width: 360px;
+    margin-bottom: 30px; 
+    
+    @media screen and (min-width: 480px) {
+        font-size: 26px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 1.36;
+        max-width: 696px;
+        }
 }
 
-.hero__button {
-    font-family: var(--main-font);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    cursor: pointer;
-    color: #FFFFFF;
-    background: var(--accent-color);
-    border-radius: 4px;
-    padding: 12px 32px;
-    border: none;
-
-}

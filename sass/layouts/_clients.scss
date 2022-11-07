@@ -1,11 +1,29 @@
 .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+        }
 }
 
 .clients-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
+    justify-content: center;
+}
+
+.clients-iteam  {
+@media screen and (min-width: 480px) {
+    width: calc((100% - 30px) /2);
+}
+@media screen and (min-width: 768px) {
+    width: calc((100% - 60px) /3);
+    }
+@media screen and (min-width: 1200px) {
+    width: calc((100% - 150px) /6);
+}
 }
 
 .clients-title {
@@ -20,7 +38,7 @@
 }
 
 .clients-soc-link {
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -36,6 +54,12 @@
     &:focus {
         border: 1px solid;
         color: var(--accent-color);
+        }
+    @media screen and (min-width: 768px) {
+            width: 226px;
+        }
+    @media screen and (min-width: 1200px) {
+            width: 170px;
         }
 }
 
