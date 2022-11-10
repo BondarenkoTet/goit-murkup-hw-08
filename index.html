@@ -18,13 +18,13 @@
         <a  class="logo link" href="./index.html">Web<span class="logo__part logo__part--black">Studio</span></a>
           <nav class="navigation navigation__set">
           <ul class="navigation__list list">
-            <li class="navigation-item"><a class="navigation__link  link current" href="./index.html">Студія</a></li>
+            <li class="navigation-item"><a class="navigation__link  link current " href="./index.html">Студія</a></li>
             <li class="navigation-item"><a class="navigation__link  link " href="./portfolio.html">Портфоліо</a></li>
             <li class="navigation-item"><a class="navigation__link link " href="">Контакти</a></li>
           </ul>
           </nav>
         <ul class="conect header__conect list">
-            <li class="conect-container">
+            <li class="conect__container">
               <a  class="conect__link link" href="mailto:info@devstudio.com">
               <svg class="icon" width="16" height="12">
                 <use href="./images/symbol-defs.svg#icon-envelopehover"></use>
@@ -35,22 +35,43 @@
                   <use href="./images/symbol-defs.svg#icon-smartphone"></use>
                 </svg>+38096111111 </a></li>
         </ul> 
-        <button type="button" class="menu-open-btn">o</button>
+        <button type="button" class="menu-open-btn" data-menu-open>
+          <svg class="menu-open-icon" width="20" height="20">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
-      <div class="mob-menu">
-        <button type="button" class="menu-close-btn">x</button>
-        <ul class="mob-list list">
-          <li class="mob-item"><a class="mob-link  link current" href="./index.html">Студія</a></li>
-          <li class="mob-item"><a class="mob-link  link " href="./portfolio.html">Портфоліо</a></li>
-          <li class="mob-item"><a class="mob-link link " href="">Контакти</a></li>
-        </ul>
-        <ul class="mob-conect header">
-          <li class="mob-conect-container">
-            <a class="mob-conect-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li class="mob-conect-container">+38096111111 </a>
-          </li>
-        </ul>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <div class="mob-btn">
+            <button type="button" class="menu-close-btn" data-menu-close>
+            <svg class="menu-close-icon" width="20" height="20">
+              <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+            </button>
+            <ul class="mob-list list">
+              <li class="mob-item"><a class="mob-link  link current" href="./index.html">Студія</a></li>
+              <li class="mob-item"><a class="mob-link  link " href="./portfolio.html">Портфоліо</a></li>
+              <li class="mob-item"><a class="mob-link link " href="">Контакти</a></li>
+            </ul>
+          </div>
+      
+        <div class="mob-soc">
+          <ul class="mob-conect header">
+            <li class="mob-conect-list list ">+38096111111</a>
+            </li>
+            <li class="mob-conect-list list ">
+              <a class="mob-conect-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            </ul>
+            <ul class="mob-soc-list list">
+              <li class="mob-soc-item"><a href="" class="mob-soc-link link">Instagram</a></li>
+              <li class="mob-soc-item"><a href="" class="mob-soc-link link">Twitter</a></li>
+              <li class="mob-soc-item"><a href="" class="mob-soc-link link">Facebook</a></li>
+              <li class="mob-soc-item"><a href="" class="mob-soc-link link">LinkedIn</a></li>
+            </ul> 
+        </div> 
+        </div>
       </div>
     </header>
     <main>
@@ -404,7 +425,7 @@
         </div>
       </section>
     </main>
-    <!--<footer class="footer">
+    <footer class="footer">
         <div class="container contact-container">
           <div class="footer-contacts">
             <a class="logo link" href="./index.html">Web<span class="logo__part logo__part--white">Studio</span></a>
@@ -420,9 +441,9 @@
                 </ul>
             </address>
           </div> 
-          <div class="footer-online"> 
+          <div class=""footer-online> 
             <p class="footer-headline">Приєднуйтесь</p>
-            <ul class="footer-online-list">
+            <ul class="footer-online-list list">
               <li class="online-iteam">
                 <a  class="online-soc-link" href="">
                 <svg class="online-soc-icon" width="20" height="20" >
@@ -467,8 +488,8 @@
             </form>
           </div>
         </div>
-      </footer>-->
-      <!--<div class="backdrop is-hidden" data-modal>
+      </footer>
+      <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-btn" data-modal-close>  
         <svg class="modal-close-icon" width="18" height="18"> 
@@ -517,7 +538,7 @@
                   <textarea name="user-text"
                             class="modal-coment"
                             placeholder="Введіть текст"
-                  ></textarea>/
+                  ></textarea>
                 </label>
                 <div class="modal-field">
                   <input type="checkbox"
@@ -536,8 +557,9 @@
               <button type="submit" class="check-btn">Відправити</button> 
           </form>
       </div>
-      </div>-->
+      </div>
       <script src="./js/modal.js"></script>
+      <script src="./js/menu.js"></script>
   </body>
 </html>
 

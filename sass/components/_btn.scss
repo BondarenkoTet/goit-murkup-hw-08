@@ -16,7 +16,6 @@
 }
 .footer-btn {
     padding: 8px 50px 8px 25px;
-    margin-left: 12px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -28,6 +27,11 @@
     border-color: transparent;
     position: relative;
     cursor: pointer;
+    @media screen and(min-width:1200px){
+    position: absolute;
+    margin-left: 12px;
+    gap: 0;
+    }
 }
 .selection-button {
     font-family: var(--main-font);
