@@ -662,10 +662,20 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero__container {
+    background-image: var(--bg-gradient), url(../images/hero-mob2x.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .hero__container {
     padding-top: 118px;
     padding-bottom: 198px;
+    background-image: var(--bg-gradient), url(../images/hero-tab1x.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero__container {
     background-image: var(--bg-gradient), url(../images/hero-tab2x.jpg);
   }
 }
@@ -674,6 +684,11 @@ img {
     padding-top: 200px;
     padding-bottom: 280px;
     height: 600px;
+    background-image: var(--bg-gradient), url(../images/hero-dec1x.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero__container {
     background-image: var(--bg-gradient), url(../images/hero-dec2x.jpg);
   }
 }
@@ -1104,11 +1119,6 @@ img {
   padding: 20px 24px;
   border: 1px solid #EEEEEE;
   height: 110px;
-}
-@media screen and (min-width: 768px) {
-  .selection-card:nth-child(1), .selection-card:nth-child(2) {
-    height: 136px;
-  }
 }
 
 .footer {
