@@ -1,5 +1,5 @@
 .modal {
-    width: 320px;
+    width: 450px;
     min-height: 609px;
     background-color: #FFFFFF;
     position: absolute;
@@ -9,10 +9,6 @@
     transition: transform 250ms;
     transition-timing-function: var(--timing-function);
     padding: 40px;
-    @media screen and (min-width: 768px) {
-        width: 450px;
-        min-height: 609px;
-    }
     @media screen and (min-width:1200px) {
         width: 528px;
         min-height: 581px;
@@ -100,6 +96,7 @@
     border-radius: 6px;
     resize: none;
     padding: 10px;
+    margin-bottom: 20px;
     outline: transparent;
     transition: color 250ms var(--timing-function), 
                 border 250ms var(--timing-function);

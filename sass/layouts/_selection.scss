@@ -87,6 +87,7 @@
 .selection-card {
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
+    height: 110px;
     @media screen and(min-width: 768px) {
     &:nth-child(1) ,
     &:nth-child(2) {
