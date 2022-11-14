@@ -11,31 +11,30 @@
     height: 400px;
     margin-left: auto;
     margin-right: auto;
-    @include retina {
-    background-image: var(--bg-gradient),
+    @include retina {   
+        background-image: var(--bg-gradient),
         url(../images/hero-mob2x.jpg);
     }
-        
-    @media screen and(min-width:768px) { 
+    @media screen and (min-width:768px) { 
         padding-top: 118px;
         padding-bottom: 198px;
         background-image: var(--bg-gradient), 
-        url(../images/hero-tab1x.jpg)  
-    }
+        url(../images/hero-tab1x.jpg); 
         @include retina{
         background-image: var(--bg-gradient),
         url(../images/hero-tab2x.jpg);
-                }
+    }
+}
     @media screen and (min-width: 1200px) {
         padding-top: 200px;
         padding-bottom: 280px;
         height: 600px;
         background-image: var(--bg-gradient) ,
-        url(../images/hero-dec1x.jpg)
-}
+        url(../images/hero-dec1x.jpg);
     @include retina {
         background-image: var(--bg-gradient),
         url(../images/hero-dec2x.jpg);
+    }
 }
 }
 

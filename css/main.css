@@ -674,7 +674,7 @@ img {
     background-image: var(--bg-gradient), url(../images/hero-tab1x.jpg);
   }
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero__container {
     background-image: var(--bg-gradient), url(../images/hero-tab2x.jpg);
   }
@@ -687,7 +687,7 @@ img {
     background-image: var(--bg-gradient), url(../images/hero-dec1x.jpg);
   }
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero__container {
     background-image: var(--bg-gradient), url(../images/hero-dec2x.jpg);
   }
@@ -1117,7 +1117,6 @@ img {
 
 .selection-card {
   padding: 20px 24px;
-  border: 1px solid #EEEEEE;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   height: 120px;
 }
