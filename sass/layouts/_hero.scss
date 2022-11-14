@@ -16,8 +16,6 @@
         url(../images/hero-mob2x.jpg);
     }
     @media screen and (min-width:768px) { 
-        padding-top: 118px;
-        padding-bottom: 198px;
         background-image: var(--bg-gradient), 
         url(../images/hero-tab1x.jpg); 
         @include retina{
@@ -27,7 +25,7 @@
 }
     @media screen and (min-width: 1200px) {
         padding-top: 200px;
-        padding-bottom: 280px;
+        padding-bottom: 200px;
         height: 600px;
         background-image: var(--bg-gradient) ,
         url(../images/hero-dec1x.jpg);
