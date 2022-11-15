@@ -17,8 +17,8 @@
     }
     @media screen and (min-width:768px) { 
         background-image: var(--bg-gradient), 
-        url(../images/Hero-tab1x.jpg); 
-        @include retina{
+        url(../images/hero-tab1x.jpg); 
+        @include retina {
         background-image: var(--bg-gradient),
         url(../images/Hero-tab2x.jpg);
     }
