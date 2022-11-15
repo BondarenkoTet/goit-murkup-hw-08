@@ -659,7 +659,7 @@ img {
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: var(--bg-gradient), url(../images/hero-mob1x.jpg);
+  background-image: var(--bg-gradient), url(../images/Hero-mob1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -669,7 +669,7 @@ img {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero__container {
-    background-image: var(--bg-gradient), url(../images/hero-mob2x.jpg);
+    background-image: var(--bg-gradient), url(../images/Hero-mob2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
