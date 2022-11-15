@@ -4,7 +4,7 @@
     padding-top: 118px;
     padding-bottom: 118px;
     background-image: var(--bg-gradient), 
-    url(../images/hero-mob1x.jpg);
+    url(../images/Hero-mob1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -13,7 +13,7 @@
     margin-right: auto;
     @include retina {   
         background-image: var(--bg-gradient),
-        url(../images/hero-mob2x.jpg);
+        url(../images/Hero-mob2x.jpg);
     }
     @media screen and (min-width:768px) { 
         background-image: var(--bg-gradient), 
