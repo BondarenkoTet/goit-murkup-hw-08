@@ -428,6 +428,11 @@ img {
   height: 60px;
   border-bottom: 1px solid #ECECEC;
 }
+@media screen and (min-width: 768px) {
+  .header {
+    height: 80px;
+  }
+}
 
 .header__container {
   display: flex;
@@ -674,7 +679,7 @@ img {
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero__container {
-    background-image: var(--bg-gradient), url(../images/hero-tab2x.jpg);
+    background-image: var(--bg-gradient), url(../images/Hero-tab2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
