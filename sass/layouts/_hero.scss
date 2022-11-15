@@ -4,7 +4,7 @@
     padding-top: 118px;
     padding-bottom: 118px;
     background-image: var(--bg-gradient), 
-    url(../images/hero-mob1x.jpg);
+    url(../images/Hero-mob1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -13,11 +13,11 @@
     margin-right: auto;
     @include retina {   
         background-image: var(--bg-gradient),
-        url(../images/hero-mob2x.jpg);
+        url(../images/Hero-mob2x.jpg);
     }
     @media screen and (min-width:768px) { 
         background-image: var(--bg-gradient), 
-        url(../images/hero-tab1x.jpg); 
+        url(../images/Hero-tab1x.jpg); 
         @include retina{
         background-image: var(--bg-gradient),
         url(../images/Hero-tab2x.jpg);
@@ -28,10 +28,10 @@
         padding-bottom: 200px;
         height: 600px;
         background-image: var(--bg-gradient) ,
-        url(../images/hero-dec1x.jpg);
+        url(../images/Hero-dec1x.jpg);
     @include retina {
         background-image: var(--bg-gradient),
-        url(../images/hero-dec2x.jpg);
+        url(../images/Hero-dec2x.jpg);
     }
 }
 }
